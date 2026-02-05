@@ -1,0 +1,52 @@
+Queues - homogenous data structure where you add at the end and remove from the front
+
+FIFO - first in, first out
+LILO - last in, last out
+
+represent a Queue horizontally - front -> back
+	enque/add/insert/addQueue - add to a queue (back/end)
+	deque/remove/rem/del/deleteQueue - remove from a queue (front)
+	
+Array-Based CIRCULAR queues
+	deletion would be handled by shifting first to the next index in line
+		[2]->[8]->[4]
+		i1   i2   i3
+		first[i1] = [i2]
+				
+	Adding an item to the array assuming a variable CURRENTSIZE
+		data[last] = item;
+		last = (last+1)%currentsize
+	
+	
+		
+Applications of a queue
+	1: Resource Management (Operating Systems) "Priority Queues = Ordered Lists" // beyond what we are doing
+	2: Simulation (Queuing Systems) 
+		Modeling the beahvior of another system
+		
+	PSUEDO-CODE/Algorithim for running a Simulation (of a Cafe)
+		perameters
+			Servers
+				number of servers
+				transaction time
+			Customers
+				frequency of arrival
+				patience for service
+			External Factors
+				time of day
+				shift schedule
+			Profit
+				successful transactions
+	
+	
+		for (clock = 1 ; clock <= simTime ; clock++) // simtime is how long the simulation will last
+			{
+				1: update server list by reducing the transaction time by 1 // Transaction time is how may ticks does if take for the server to serve a customer
+				2: if non-empty, increment wait times by 1
+				3: if customer arrives, increase count and add to queue
+				4: if server is free & queue is not-empty, remove customer from queue and add it to the server (mark server as busy)
+			}
+		
+		
+		
+		

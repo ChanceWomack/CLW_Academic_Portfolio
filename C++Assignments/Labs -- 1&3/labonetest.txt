@@ -1,0 +1,20 @@
+
+/* Multiline
+	Comment */
+
+// Monoline Comment
+
+/* - Start: Notes from Syllabus Week
+
+	Go over the Basics of C++ Syntax (Personal Time)
+	A lot of Python will Help with C++
+	If i research a method not covered in class for use on an assignment, cite my source and don't just C/P it
+	"Class (Private by Default)" and "Struct (Open by Default)" are very similar
+	Do Hello World!!! program in C++ by Monday
+	C++ programs are saved as a .cpp (.cpp is the source code, .exe is the compiled executable)
+		C++ Programs are compiled into an executable file (instead of being Interpreted in Python)
+	Look into installing "Bloodshed Dev C++" or "Geany" on my laptop
+
+	ANY CHANGES TO A SOURCE CODE MUST THEN BE RE-COMPILED INTO A NEW .EXE
+
+End: Notes from Syllabus Week */

@@ -1,0 +1,51 @@
+Stack - Homogenous storage structure where all manipulations are done at one end called the "TOP"
+
+LIFO = Last In, First Out
+FILO = First In, Last Out
+
+All items are put on top of the stack, on top of the one before it
+
+"push" is the term used for adding an item to the stack // push(T)
+
+"pop" is the deletion method for stacks // pop(T)
+
+the value of top = the NEXT available index (highest in use index +1)
+
+MEMBERS/METHODS TO NOTE
+	int Top;
+	T *data;
+
+	pop
+	push
+	isEmpty
+	getTop - data of top
+	isFull
+	getLength - index of top + 1
+	printStack
+	clearStack
+	creation - constructor/declarations
+	destroy - deconstructor
+	
+	
+infix expressions
+	the operator is in the middle of the operands
+prefix expressions (polish)
+	the operator is before the operands
+postfix expressions (reverse polish)
+	the operator is after the operands
+	evaluating postfix with a stack
+		rule 1: if number push on stack
+		rule 2: not number, pop 2 from stack, apply operator, push result
+		rule 3: when done, the result is on the stack
+		
+how to convert from infix to postfix
+
+	example:	infix		(a-b) + (c-d)
+			postfix		a b - c d - +
+			
+			infix		3*(a+b)-6*(c+d)
+			postfix		3 a b + * 6 c d + *
+			
+			infix		(7-3)*2+6/(4-2)
+			postfix		7 3 - 2 * 6 4 2 - /
+

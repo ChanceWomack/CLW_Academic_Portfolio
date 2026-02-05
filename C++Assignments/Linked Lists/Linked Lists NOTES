@@ -1,0 +1,57 @@
+
+
+List - homogeneous collection of data with positions
+	Array based list
+	- Fixed Size
+	- A lot of Data moving when updating
+	- Searching when unordered is slow (same for any unordered structure)
+	- Any insertion or deletion is complicated
+	+ Has Direct index access
+	
+	Dynamic Data Structures are the opposite of a Fixed Data Structure (ie Arrays)
+		Pointers and Vectors
+		
+	NODE FOR A LINKED LIST / WHICH IS A DYNAMIC STRUCTURE
+______BLANK NodeType______________________________
+	/* Chance Womack
+	 * Blank Node Type
+	 */
+	 
+	// include desired libraries and define class
+
+	#ifndef H_NODETYPE
+	#define H_NODETYPE
+	#include <iostream>
+	#include <iomanip>
+
+		template <typename T>
+		class NodeType
+		{ // start def
+		public:
+			T data; // variable declaration
+			NodeType<T> *next; // variable declaration
+			
+			NodeType(T d=0) { data = d; next = nullptr; } // constructor
+		}; // end def
+	#endif
+_______________________________________________
+
+
+
+Building a Linked List
+
+	1: Building Foward (insert new items at the end of the list)
+	
+	
+Doubly Linked Lists
+	Different Node Structure: 1 Data + Next Point + Previous Pointer
+	
+	Each Node points to both the next node and the previous node
+
+
+Circular Linked List
+	Last node points to the first node
+
+
+
+		
